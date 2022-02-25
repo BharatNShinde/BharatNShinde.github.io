@@ -37,7 +37,14 @@
 
 <body>
     <h1>test message</h1>
-
+    <script src="https://dev61618.service-now.com/scripts/sn_csm_ec.js?v=4.0.1"></script>
+    <script>
+    SN_CSM_EC.init({
+        moduleID: "https://dev61618.service-now.com/#e94db98f2f39011084f7f5ecf699b62c",
+        loadFeature: SN_CSM_EC.loadEMFeature()
+    });
+    </script>
+    
     <!-- ******HEADER****** --> 
     <header class="header">
         <div class="container">     
