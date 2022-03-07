@@ -50,14 +50,18 @@
     </script>
 --> 
 
-    <h1>ServiceNow Engagement Messanger Testing CYBAGE Instance....</h1>
+    <h1>ServiceNow Engagement Messanger Testing (cybagesoftwareincdemo3.service-now.com)....</h1>
 
     <script src="https://cybagesoftwareincdemo3.service-now.com/scripts/sn_csm_ec.js?v=4.0.1"></script>
     <script>
     SN_CSM_EC.init({
-        moduleID: "https://cybagesoftwareincdemo3.service-now.com/#7804fcdedbce051086147fb5f39619fb",
+        moduleID: "https://cybagesoftwareincdemo3.service-now.com/#8d790112dbc2451086147fb5f396196e",
         loadFeature: SN_CSM_EC.loadEMFeature()
     });
+    
+    SN_CSM_EC.onLogin();
+    /* Call SN_CSM_EC.onLogin() function to start the user session in the Engagement Messenger automatically when the user logs in to the main portal */
+    /* Call SN_CSM_EC.onLogout() function to terminate the user session in the Engagement Messenger automatically when the user logs out from the main portal */
     </script>
 
 
